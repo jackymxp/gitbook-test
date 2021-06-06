@@ -42,7 +42,8 @@ jobs:
         echo "${MYNAME}"
         echo "${MYEMAIL}"
         git init
-        git remote add origin https://${REF}
+        # git remote add origin https://${REF}
+        git remote add origin git@github.com:jackymxp/gitbook-test.git
         echo  https://${REF}
         git add . 
         git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
