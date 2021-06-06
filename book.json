@@ -1,0 +1,38 @@
+{
+  "title": "我的gitbook",
+  "author": "jackymxp",
+  "description": "测试Gitbook",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "styles": {
+      "website": "./styles/website.css"
+  },
+  "structure": {
+      "readme": "README.md"
+  },
+  "links": {
+      "sharing": {
+          "all": null,
+          "facebook": null,
+          "google": null,
+          "twitter": null,
+          "weibo": null
+      },
+      "sidebar": {
+          "码不能停": "https://jackymxp.github.io/"
+      }
+  },
+    "plugins": [
+      "klipse"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy ershouche-FE 2019",
+            "modify_label": "文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "disqus": {
+          "shortName": "gitbookuse"
+        }
+    }
+  }
