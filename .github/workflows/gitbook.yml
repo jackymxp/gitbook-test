@@ -51,4 +51,5 @@ jobs:
         git branch -M main
         echo git branch -M main finish
         echo "https://${TOKEN}@${REF}" 
-        git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages  #强制推送到gh-pages分支
+        # git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages  #强制推送到gh-pages分支
+        git push --force --quiet   git@github.com:jackymxp/gitbook-test.git   main:gh-pages 
