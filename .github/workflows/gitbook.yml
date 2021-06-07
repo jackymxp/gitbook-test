@@ -31,7 +31,7 @@ jobs:
                 
     - name: push _book to branch gh-pages 
       env:
-        TOKEN: ${{ secrets.TOKEN }}
+        TOKEN: ${{ secrets.ACCESS_TOKEN }}
         REF: github.com/${{github.repository}}
         MYEMAIL: jackymxp@gmail.com                  # ！！记得修改为自己邮箱
         MYNAME: ${{github.repository_owner}}          
@@ -46,15 +46,8 @@ jobs:
         git remote add origin git@github.com:jackymxp/gitbook-test.git
         echo  https://${REF}
         git add . 
-        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
-        echo "哈哈"
-        git checkout -b gh-pages 
-        git status 
-        
-        git push -f  --set-upstream origin gh-pages
-        
-        
-        # echo git branch -M main finish
+        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"      
+        git branch -M main finish
         # echo "https://${TOKEN}@${REF}" 
-        # git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages  #强制推送到gh-pages分支
+        git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages  #强制推送到gh-pages分支
         # git push --force --quiet   git@github.com:jackymxp/gitbook-test.git   main:gh-pages 
