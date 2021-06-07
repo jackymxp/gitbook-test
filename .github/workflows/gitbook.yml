@@ -42,12 +42,12 @@ jobs:
         echo "${MYNAME}"
         echo "${MYEMAIL}"
         git init
-        # git remote add origin https://${REF}
-        git remote add origin git@github.com:jackymxp/gitbook-test.git
+        git remote add origin https://${REF}
+        # git remote add origin git@github.com:jackymxp/gitbook-test.git
         echo  https://${REF}
         git add . 
         git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"      
-        git branch -M main finish
+        git branch -M main
         # echo "https://${TOKEN}@${REF}" 
         git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages  #强制推送到gh-pages分支
         # git push --force --quiet   git@github.com:jackymxp/gitbook-test.git   main:gh-pages 
