@@ -3,8 +3,6 @@
 <script src="//onlinegdb.com/embed/js/OjbRZTr2g?theme=light"></script>
 
 
-
-
 {% klipse "eval-js", loopMsec="1000" %}
 new Date()
 {% endklipse %}
