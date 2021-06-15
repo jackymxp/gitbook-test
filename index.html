@@ -1,0 +1,356 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · 我的gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jackymxp">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://jackymxp.github.io/" target="_blank" class="custom-link">码不能停</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Node Modules
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="node_modules/gitbook-plugin-klipse/README.md">
+            
+                <span>
+            
+                    
+                    Gitbook Plugin Klipse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <script src="https://leetcode-cn.com/problems/intersection-of-two-linked-lists/"></script>
+
+<script src="//onlinegdb.com/embed/js/OjbRZTr2g?theme=light"></script>
+
+
+<p><pre><code class="lang-eval-js" data-loop-msec="1000">
+new Date()
+</code></pre></p>
+<p><pre><code class="lang-eval-python" data-gist-id="jackymxp/681cd4b4fe195300905b48fb2776050e">
+</code></pre></p>
+<pre><code class="lang-eval-cpp">#include &lt;iostream&gt;
+
+using namespace std;
+
+template&lt;typename T&gt;
+class BubbleSort {
+public:
+    void bubbleSortIterative(T *arr, const int len) {
+        bubbleSortIterative(arr, 0, len - 1);
+        // assert(isSorted(arr, len) == true);
+    }
+
+    void bubbleSortRecursive(T *arr, const int len) {
+        bubbleSortRecursive(arr, 0, len - 1);
+        // assert(isSorted(arr, len) == true);
+    }
+
+    void bubbleSortAdvanced(T *arr, const int len) {
+        bubbleSortAdvanced(arr, 0, len - 1);
+        // assert(isSorted(arr, len) == true);
+    }
+
+private:
+    void bubbleSortIterative(T *arr, const int lo, const int hi) {
+        for (int i = hi; i &gt;= lo + 1; i--) {
+            bubbleOperator(arr, i);
+            // assert(isSorted(arr, i, hi));
+        }
+    }
+
+    void bubbleSortRecursive(T *arr, const int lo, const int hi) {
+        if (lo &gt;= hi)
+            return;
+        bubbleOperator(arr, hi);
+        bubbleSortRecursive(arr, lo, hi - 1);
+    }
+
+    void bubbleSortAdvanced(T *arr, const int lo, const int hi) {
+        for (int i = hi; i &gt;= lo + 1; i--) {
+            if (bubbleOperatorAdvanced(arr, i))
+                return;
+            // assert(isSorted(arr, i, hi));
+        }
+    }
+
+    //&#x5728;arr[0...hi]&#x505A;&#x5192;&#x6CE1;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C06;&#x6700;&#x5927;&#x503C;&#x653E;&#x5728;arr[hi]&#x4F4D;&#x7F6E;
+    inline void bubbleOperator(T *arr, const int hi) {
+        for (int i = 0; i &lt; hi; i++)
+            if (arr[i] &gt; arr[i + 1])
+                swap(arr, i, i + 1);
+    }
+
+    //&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x4EA4;&#x6362;&#x8FD4;&#x56DE;true
+    inline bool bubbleOperatorAdvanced(T *arr, const int hi) {
+        bool isSort = true;
+        for (int i = 0; i &lt; hi; i++) {
+            if (arr[i] &gt; arr[i + 1]) {
+                swap(arr, i, i + 1);
+                isSort = false;
+            }
+        }
+        return isSort;
+    }
+
+    void swap(T *arr, const int i, const int j) {
+        T k = arr[i];
+        arr[i] = arr[j];
+        arr[j] = k;
+    }
+
+    bool isSorted(T *arr, const int lo, const int hi) {
+        for (int i = lo; i &lt; hi; i++)
+            if (arr[i] &gt; arr[i + 1])
+                return false;
+        return true;
+    }
+
+    bool isSorted(T *arr, const int len) {
+        return isSorted(arr, 0, len - 1);
+    }
+};
+
+int main(void){
+    srand(time(NULL));
+    BubbleSort&lt;int&gt; bubbleSort;
+    const int len = 10000;
+    int* arr = new int[len];
+
+
+    for(int i = 0; i &lt; len; i++)
+        arr.push_back(rand()%len);
+    bubbleSort.bubbleSortIterative(&amp;arr[0], len);
+    return 0;
+}
+</code></pre>
+<script src="https://snippets.cacher.io/snippet/d635afe4965230ee9159"></script>
+
+<script src="https://gist.github.com/ouqiang/2f22a86e32d1bb53832f.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Node Modules","level":"1.2","depth":1,"ref":"","articles":[{"title":"Gitbook Plugin Klipse","level":"1.2.1","depth":2,"path":"node_modules/gitbook-plugin-klipse/README.md","ref":"node_modules/gitbook-plugin-klipse/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["klipse"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ershouche-FE 2019","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"shortName":"gitbookuse"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"klipse":{"myConfigKey":"it's the default value"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"jackymxp","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的gitbook","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"码不能停":"https://jackymxp.github.io/"}},"gitbook":"3.2.3","description":"测试Gitbook"},"file":{"path":"README.md","mtime":"2021-06-15T12:48:16.472Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-15T12:49:05.352Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
